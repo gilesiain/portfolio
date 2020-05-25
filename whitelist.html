@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Whitelist</title>
+        <link rel="stylesheet" href="/stylesheet.css">
+        <script src="/mail.js"></script>
+        <script src="/common_elements.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <div class="show_contact_form"></div>
+
+        <div class="project-container-one">
+            <h1 class="project-tittle">
+                AUTOMATED <br>
+                WHITELIST
+            </h1>
+        </div>
+        <div class="project-container-three">
+            <ul>
+                <li>
+                    <button class="try_it_out"
+                        onclick="window.open('https://www.iaingiles.com/projects/whitelist/whitelist.html');">TRY
+                        IT OUT</button>
+                </li>
+                <li>
+                    <button class="github"
+                        onclick="window.open('https://github.com/gilesiain/automated-whitelist');">VIEW
+                        CODE</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="spacer">
+
+            <div class="project-container-two">
+                <h4>WHY?</h4>
+                <P>I used to be part of a few ARMA(Pc game) communities, a lot
+                    of
+                    these communities ran their own game servers and most of
+                    them
+                    where white listed, meaning if you wanted on the server you
+                    had
+                    to read and understand the server rules, you would then have
+                    some what of an interview with a server admin to verify you
+                    where going to follow said rules and not be a complete
+                    menace on
+                    the server or to other players. These interviews consisted
+                    of an
+                    admin briefly asking a few questions about the server rules
+                    and
+                    if you answered correctly then you'd get whitelisted, so I
+                    thought, why not automate this and free up admin time for
+                    other
+                    things like server maintenance etc. </P>
+                <h4>HOW?</h4>
+                <ul>
+                    <li>
+                        Client enters steam username.
+                    </li>
+                    <li>
+                        Using javascript (ajax), username gets passed to php,
+                        where
+                        the data(steamid,name,profile image) is grabbed using
+                        xml,
+                        the steamid64 is encoded to battle-eye anti cheat guid
+                        first
+                        then all data is passed back as an array to javascript
+                        via
+                        json.
+                    </li>
+                    <li>
+                        Once a profile has been found/verified, the user is then
+                        asked randomly generated questions (with time limit)
+                        about
+                        the server rules, meaning if they got the questions
+                        wrong
+                        and tried again it would be completely different
+                        questions
+                        each time(no cheating),(not randomly generated or time
+                        based
+                        in project example).
+                    </li>
+                    <li>
+                        Lastly if the test is passed, then the guid(anti cheat
+                        user
+                        id) retrieved earlier would then be passed from
+                        javascript
+                        variable to php(ajax), using php a .txt file is appended
+                        with said guid, once it has been appended a copy of this
+                        file is sent to the game server via ftp(ftp_put).
+                    </li>
+                </ul>
+                <h4>TOOLS USED</h4>
+                <div class="tools-used">
+                    <ul>
+
+                        <img src="/images/html.svg" alt="html logo">
+
+                        <img src="/images/css.svg" alt="css logo">
+
+                        <img src="/images/javascript.svg" alt="javascript logo">
+                        <img src="/images/php.svg" alt="php logo">
+
+                    </ul>
+                </div>
+                <h4>OTHER</h4>
+                <p>Ajax, JSON, FTP.</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="back-to-top">
+                <img src="/images/light-logo.svg" alt="lightening bolt logo"
+                    onclick="document.body.scrollTop='0 ' ;
+                    document.documentElement.scrollTop='0 ' ;">
+            </div>
+            <p>
+                Location:
+                <br> Belfast,
+                <br> Northern Ireland.
+            </p>
+
+            <div class="footer-links">
+                <img src="/images/github.svg" alt="github logo link"
+                    onclick="window.location.href='https://github.com/gilesiain/'">
+                <img src="/images/linkedin.svg" alt="linked in logo link"
+                    onclick="window.location.href='https://www.linkedin.com/in/iain-giles-9a9b871a9/'">
+            </div>
+        </footer>
+    </body>
+</html>

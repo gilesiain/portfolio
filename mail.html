@@ -1,0 +1,19 @@
+<div class="contact-popup" id="contact-popup">
+    <div class="form-box">
+        <img src="/images/close-button.svg" alt="contact close button"
+            onclick="hide_contact_form()">
+
+        <form autocomplete="off" action="" method="post" onsubmit="return
+            check_mail();">
+            <p>Name</p>
+            <input type="text" name="name" id="name" maxlength="25"><br>
+            <p>Email</p>
+            <input type="email" name="email" id="email" maxlength="25"><br>
+            <p>Subject</p>
+            <input type="text" name="subject" id="subject" maxlength="30"><br>
+            <p>Message</p>
+            <textarea name="message" id="message" maxlength="400"></textarea><br>
+            <button type="submit" id="submit" value="submit">SEND</button>
+        </form>
+    </div>
+</div>

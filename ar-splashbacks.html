@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ar splashbacks</title>
+        <link rel="stylesheet" href="/stylesheet.css">
+        <script src="/mail.js"></script>
+        <script src="/common_elements.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <div class="show_contact_form"></div>
+
+        <div class="project-container-one">
+            <h1 class="project-tittle">
+                AR SPLASHBACKS
+            </h1>
+        </div>
+        <div class="project-container-three">
+            <ul>
+                <li>
+
+                    <button class="try_it_out"
+                        onclick="window.open('https://www.iaingiles.com/projects/arsplashbacks/arstart.html');">TRY
+                        IT OUT</button>
+                </li>
+                <li>
+                    <button class="github"
+                        onclick="window.open('https://github.com/gilesiain/ar-splashbacks');">VIEW
+                        CODE</button>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="spacer">
+
+            <div class="project-container-two">
+                <h4>WHY?</h4>
+                <P>I worked for a splashback company at the time and they were
+                    thinking about ways to grab more customers in the form of AR
+                    as
+                    Dulux (famous paint brand) had an AR app where you could use
+                    your mobile camera, point it at a wall, choose a colour and
+                    it
+                    would make that wall look like it was painted in the colour
+                    you
+                    selected. Looking about I came across an extension for
+                    Aframe
+                    (3D Javascript library) called AR.js and I made a prototype
+                    where the customer print out a marker (marker based AR),
+                    stick
+                    it to their wall (where they wanted their splashback), point
+                    their phone at it and it would make it look like they had a
+                    splashback installed via AR, the fact the customer had the
+                    hassle of printing out a marker was the reason it never
+                    became
+                    more than a prototype(the limitations of web based AR at the
+                    moment)</P>
+                <h4>HOW?</h4>
+                <ul>
+                    <li>
+                        Customer prints out provided AR marker.
+                    </li>
+                    <li>
+                        Customer attaches marker to position of where splashback
+                        would go.
+                    </li>
+                    <li>
+                        Now they enter the splashback measurements
+                        (height/width).
+                    </li>
+                    <li>
+                        Next AR.js fires up, customer is prompted to allow
+                        access to
+                        mobile camera, AR.js takes the passed measurement
+                        variables
+                        and applies height/width to the 3D representation of a
+                        splashback (its just a square 3D plain).
+                    </li>
+                    <li>
+                        AR.js detects the marker from camera stream and attaches
+                        the
+                        3D object to it in 3D space, giving the illusion of an
+                        actual splashback on their wall (exactly what augmented
+                        reality is).
+                    </li>
+                    <li>
+                        To choose colour there is a scroll-able list of colours
+                        at
+                        the bottom that when clicked on, passes the div colour
+                        to
+                        AR.js object and applies that colour as a texture, so
+                        the
+                        customer can decide on a colour within an AR
+                        representation.
+                    </li>
+                    <li>
+                        The 3D plain (augmented splashback), also has a cube-map
+                        reflection attached to it, giving the "splashback" a
+                        glass
+                        look to it and making it more immersive for the
+                        customer.
+                    </li>
+                </ul>
+
+                <h4>TOOLS USED</h4>
+                <div class="tools-used">
+                    <img src="/images/html.svg" alt="html logo">
+
+                    <img src="/images/css.svg" alt="css logo">
+
+                    <img src="/images/javascript.svg" alt="javascript logo">
+                </div>
+                <h4>LIBRARIES</h4>
+                <p>AR.js, Aframe (www.aframe.io).</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="back-to-top">
+                <img src="/images/light-logo.svg" alt="lightening bolt logo"
+                    onclick="document.body.scrollTop='0 ' ;
+                    document.documentElement.scrollTop='0 ' ;">
+            </div>
+            <p>
+                Location:
+                <br> Belfast,
+                <br> Northern Ireland.
+            </p>
+
+            <div class="footer-links">
+                <img src="/images/github.svg" alt="github logo link"
+                    onclick="window.location.href='https://github.com/gilesiain/'">
+                <img src="/images/linkedin.svg" alt="linked in logo link"
+                    onclick="window.location.href='https://www.linkedin.com/in/iain-giles-9a9b871a9/'">
+            </div>
+        </footer>
+    </body>
+</html>

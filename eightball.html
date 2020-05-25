@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eight ball</title>
+        <link rel="stylesheet" href="/stylesheet.css">
+        <script src="/mail.js"></script>
+        <script src="/common_elements.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <div class="show_contact_form"></div>
+
+        <div class="project-container-one">
+            <h1 class="project-tittle">
+                EIGHT BALL
+            </h1>
+        </div>
+
+        <div class="project-container-three">
+            <ul>
+                <li>
+
+                    <button class="try_it_out"
+                        onclick="window.open('https://8ball.iaingiles.com');">TRY
+                        IT OUT</button>
+                </li>
+                <li>
+                    <button class="github"
+                        onclick="window.open('https://github.com/gilesiain/magiceightball');">VIEW
+                        CODE</button>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="spacer">
+
+            <div class="project-container-two">
+                <h4>WHY?</h4>
+                <P>Sinking my teeth into vue.js as a framework, this was the
+                    first time using it, I simply wanted to learn this framework
+                    as it seems so popular at the moment (not to mention its
+                    fast) and I decided to do something a little nostalgic with
+                    it, I mean whats more nostalgic than a magic eight ball, I
+                    really liked learning and working with this framework,
+                    simple enough to get up and running and although doing
+                    things are a little different than standard JS it was easy
+                    enough to wrap my head around.</P>
+                <h4>HOW?</h4>
+                <ul>
+                    <li>
+                        Eight ball image and a little triangle image with a
+                        message on it, layered on top of each other.
+                    </li>
+                    <li>
+                        Once the eight ball image has been clicked a function
+                        triggers a randomly generated number from zero to how
+                        many values there are with in an array (each value
+                        representing the directory of an image of said triangle
+                        with each having a different message on it).
+                    </li>
+                    <li>
+                        When the random number is generated its value is used to
+                        pull a string from the array with that number as its
+                        index.
+                    </li>
+                    <li>
+                        The string is than passed into image.src.
+                    </li>
+                    <li>
+                        Leaving you with a different image generated each time
+                        the eight ball is clicked, resulting in an magic eight
+                        ball like experience as each image has a different
+                        message on it.
+                    </li>
+                    <li>
+                        The animations are all achieved with standard css, I
+                        also added a simple nav bar and using VUE router, you
+                        can skip between pages all while they generate their own
+                        url.
+                    </li>
+                </ul>
+
+                <h4>TOOLS USED</h4>
+                <div class="tools-used">
+                    <img src="/images/html.svg" alt="html logo">
+                    <img src="/images/css.svg" alt="css logo">
+                    <img src="/images/javascript.svg" alt="javascript logo">
+                    <img src="/images/vue.svg" alt="php logo">
+                    <img src="/images/ill.svg" alt="illustrator logo">
+                    <img src="/images/photoshop.svg" alt="photoshop logo">
+                </div>
+                <h4>OTHER</h4>
+                <p>VUE router, Node.js, NPM.</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="back-to-top">
+                <img src="/images/light-logo.svg" alt="lightening bolt logo"
+                    onclick="document.body.scrollTop='0 ' ;
+                    document.documentElement.scrollTop='0 ' ;">
+            </div>
+            <p>
+                Location:
+                <br> Belfast,
+                <br> Northern Ireland.
+            </p>
+
+            <div class="footer-links">
+                <img src="/images/github.svg" alt="github logo link"
+                    onclick="window.location.href='https://github.com/gilesiain/'">
+                <img src="/images/linkedin.svg" alt="linked in logo link"
+                    onclick="window.location.href='https://www.linkedin.com/in/iain-giles-9a9b871a9/'">
+            </div>
+        </footer>
+    </body>
+</html>
